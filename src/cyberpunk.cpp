@@ -375,8 +375,6 @@ void generatematrix(vector<string> &token, int &matrix_width, int &matrix_height
             mt19937 gen(rd()); 
             uniform_int_distribution<int> dis(0, token.size()-1); 
             int randomNumber = dis(gen);
-
-            cout << randomNumber << endl;
             code alfanum;
             alfanum.token = token[randomNumber];
             alfanum.status = false;
